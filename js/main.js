@@ -1,67 +1,145 @@
-// const anio_nacimiento = 1900;
-// const anioNacimiento = 1996;
-//
-// let numeroDeTelefono = "";
+// IF
 
-// ASIGNACIÓN
+// let nombre = prompt("Ingrese el nombre");
+//
+// if (nombre == "Rodrigo") {
+//     console.log("Hola Rodrigo");
+// }
+//
+// if (nombre == "Pepe") {
+//     console.log("Hola pepe, cómo estás?");
+// }
 
-// const anioNacimiento = 1996;
-//
-// let edad = 0;
-// edad = 21;
-//
-// let direccion = "";
+// IF - ELSE
 
-// OPERACIONES CON VARIABLES
+// const nombre = prompt("Ingres el nombre");
+//
+// if (nombre == "Rodrigo") {
+//     console.log("Hola Rodrigo, cómo estás?");
+// } else {
+//     console.log("Hola quien quiera que seas");
+// }
 
-// const numero1 = 10;
-// const numero2 = 30;
-// const numero3 = 50;
-// //          5                50   /     10
-// const resultadoDivision = numero3 / numero1;
-//
-// //           1500                  30   *    50
-// const resultadoMultiplicacion = numero2 * numero3;
-//
-// const resultadoSuma = numero1 + numero2 + numero3 - numero1 - numero2;
-//
-// const string1 = "HOLA";
-// const string2 = "CÓMO ESTÁS";
-// const string3 = ", ";
-//
-// // "HOLACOMO ESTAS" = "HOLA" + "CÓMO ESTÁS"
-// const saludo = string1 + string2;
-//
-// //    HOLA, CÓMO ESTÁS
-// const saludoConEspacios = string1 + string3 + string2;
-//
-// // CONSOLE.LOG
-// console.log("El resultado de la multiplicación es: " + resultadoMultiplicacion);
+// IF, ELSE IF Y ELSE
 
-// PROMPT
-
-// const nombre = prompt("Ingrese el nombre");
-// const edad = prompt("Ingrese la edad");
+// const nombre = prompt("Ingres el nombre");
 //
-// const mensajeDeBienvenida = "Hola " + nombre + ", tu edad es: " + edad;
-// console.log(mensajeDeBienvenida);
-// alert(mensajeDeBienvenida);
+// if (nombre == "Rodrigo") {
+//     console.log("Hola Rodrigo, cómo estás?");
+// } else if (nombre == "Pedro") {
+//     console.log("Hola Pedro, todo bien?");
+// } else if (nombre == "Juan") {
+//     console.log("Que onda Juan");
+// } else {
+//     console.log("Hola quien quiera que seas");
+// }
 
-// TIPO DE DATO EN PROMPT
-// let edad = parseInt(prompt("Ingrese la edad"));
-// edad = edad + 1;
+// VARIABLES BOOLEANAS
+
+// const nombre = prompt("Ingres el nombre");
 //
-// console.log(edad);
-
-let precioDeProducto = parseFloat(prompt("Ingrese el precio del producto"));
-
-console.log("El precio del producto es: $" + precioDeProducto);
-
-// CONCATENAR STRINGS CON NUMEROS
-// const string1 = "hola";
-// const numero2 = 50;
-// const numero3 = 40;
-// const numero1 = 30;
+// const esRodrigo = (nombre == "Carlos");
 //
-// const concatenar = numero2 + numero3 + numero1 + string1;
-// console.log(concatenar);
+// if (esRodrigo) {
+//     console.log("Hola rodrigo cómo estás");
+// } else {
+//     console.log("No sos Rodrigo");
+// }
+
+// OPERADORES LÓGICOS
+
+// const nombre = prompt("Ingrese un nombre");
+//
+// if(nombre != "Juan") {
+//     console.log("No sos Juan");
+// }
+
+// const precio = 400;
+//
+// if (precio > 500) {
+//     console.log("Mayor a 500");
+// }
+//
+// if (precio < 500) {
+//     console.log("Menor a 500");
+// }
+//
+// if (precio >= 500) {
+//     console.log("Mayor o igual a 500");
+// }
+//
+// if (precio <= 500) {
+//     console.log("Menor o igual a 500");
+// }
+
+// OPERADORES && Y ||
+
+// const nombre = prompt("ingrese un nombre");
+// const edad = parseInt(prompt("Ingrese la edad"));
+
+// if ( (nombre == "Rodrigo") && (edad > 18)) {
+//     console.log("Acceso permitido");
+// }
+
+// if ( (nombre == "Rodrigo") || (edad > 18) ) {
+//     console.log("Acceso permitido");
+// }
+
+// ---------
+
+// const nombre = prompt("ingrese un nombre");
+// const edad = parseInt(prompt("Ingrese la edad"));
+
+// ESTO ESTA BIEN
+// if ( (nombre == "Rodrigo" || nombre == "rodrigo") && (edad > 18) ) {
+//     console.log("Acceso permitido");
+// }
+
+// ESTO ESTA MAL!!!!!!
+// if ( nombre == "Rodrigo" || (nombre == "rodrigo" && edad > 18) ) {
+//     console.log("Acceso permitido");
+// }
+
+// OPERADOR ESTRICTAMENTE IGUAL / DISTINTO
+
+// const edad = parseInt(prompt("Ingrese la edad"));
+
+// ESTRICTAMENTE IGUAL
+// if (edad == 20) {
+//     console.log("Usted tiene 20");
+// }
+
+// if (edad === 20) {
+//     console.log("Usted tiene 20");
+// }
+
+// ESTRICTAMENTE DISTINTO
+// if (edad != 20) {
+//     console.log("Edad distinta de 20");
+// }
+
+// if (edad !== 20) {
+//     console.log("Edad distinta de 20");
+// }
+
+// OPERADOR NOT
+
+const edad = parseInt(prompt("Ingrese la edad"));
+
+const esMayorA18 = (edad > 18);
+
+if (esMayorA18) {
+    console.log("Es mayor a 18");
+}
+
+// ...
+
+if (esMayorA18) {
+    console.log("Es mayor a 18.");
+}
+
+// ...
+
+if (!esMayorA18) {
+    console.log("NO ES MAYOR A 18");
+}
